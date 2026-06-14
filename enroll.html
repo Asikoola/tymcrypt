@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Enroll — Time Crypto</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<!-- ANIMATED COIN CANVAS (background) -->
+<canvas id="coinCanvas"></canvas>
+ 
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-icon">TC</div>
+    Time Crypto
+  </div>
+  <a href="index.html" class="nav-back">← Back to Home</a>
+</nav>
+ 
+<!-- PAGE CONTENT -->
+<div class="page">
+ 
+  <!-- HEADER -->
+  <div class="enroll-header">
+    <div class="enroll-eyebrow">
+      <span class="pulse-dot"></span>
+      Enrollment Open
+    </div>
+    <h1>Choose Your <em>Trading Level</em></h1>
+    <p>Pick the program that matches where you are right now. Every level gets live sessions, real setups, and a community of traders pushing forward together.</p>
+  </div>
+ 
+  <!-- PRICING CARDS -->
+  <div class="cards-row">
+ 
+    <!-- BEGINNER -->
+    <div class="price-card">
+      <div class="card-icon icon-beginner">🌱</div>
+      <div class="card-level level-beginner-label">Beginner</div>
+      <h2>Trading Foundations</h2>
+      <p>Start from zero and build a solid base — chart reading, market structure, and your first live trade.</p>
+      <div class="price-display">
+        <span class="price-currency">$</span>
+        <span class="price-amount">49</span>
+        <span class="price-period">/ 6 weeks</span>
+      </div>
+      <ul class="feature-list">
+        <li><span class="check check-green">✓</span> Market basics &amp; terminology</li>
+        <li><span class="check check-green">✓</span> Chart reading &amp; candlestick patterns</li>
+        <li><span class="check check-green">✓</span> 40+ video lessons</li>
+        <li><span class="check check-green">✓</span> Community access</li>
+        <li><span class="check check-green">✓</span> Completion certificate</li>
+      </ul>
+      <button class="btn-enroll btn-enroll-outline" onclick="openModal('Beginner','Trading Foundations','$49')">Get Started</button>
+    </div>
+ 
+    <!-- INTERMEDIATE (featured) -->
+    <div class="price-card featured">
+      <div class="featured-badge">Most Popular</div>
+      <div class="card-icon icon-intermediate">⚡</div>
+      <div class="card-level level-intermediate-label">Intermediate</div>
+      <h2>Crypto &amp; Forex Mastery</h2>
+      <p>Go deep into crypto and forex with live sessions, real trade setups, and a trade journal framework.</p>
+      <div class="price-display">
+        <span class="price-currency">$</span>
+        <span class="price-amount">100</span>
+        <span class="price-period">/ 10 weeks</span>
+      </div>
+      <ul class="feature-list">
+        <li><span class="check">✓</span> Everything in Beginner</li>
+        <li><span class="check">✓</span> Live weekly trading sessions</li>
+        <li><span class="check">✓</span> Crypto &amp; Forex deep dives</li>
+        <li><span class="check">✓</span> Trade journal framework</li>
+        <li><span class="check">✓</span> Risk management masterclass</li>
+        <li><span class="check">✓</span> 80+ video lessons</li>
+        <li><span class="check">✓</span> Priority community support</li>
+      </ul>
+      <button class="btn-enroll btn-enroll-gold" onclick="openModal('Intermediate','Crypto &amp; Forex Mastery','$100')">Enroll Now</button>
+    </div>
+ 
+    <!-- ADVANCED -->
+    <div class="price-card">
+      <div class="card-icon icon-advanced">🔥</div>
+      <div class="card-level level-advanced-label">Advanced</div>
+      <h2>Pro Trader Mentorship</h2>
+      <p>One-on-one mentorship with a professional trader. Trade reviews, live sessions, and a personal edge refined over 12 weeks.</p>
+      <div class="price-display">
+        <span class="price-currency">$</span>
+        <span class="price-amount">150</span>
+        <span class="price-period">/ 12 weeks</span>
+      </div>
+      <ul class="feature-list">
+        <li><span class="check">✓</span> Everything in Intermediate</li>
+        <li><span class="check">✓</span> 1-on-1 weekly mentor sessions</li>
+        <li><span class="check">✓</span> Personal trade reviews</li>
+        <li><span class="check">✓</span> Advanced strategies &amp; setups</li>
+        <li><span class="check">✓</span> Trading psychology coaching</li>
+        <li><span class="check">✓</span> Lifetime community access</li>
+        <li><span class="check">✓</span> Pro certificate &amp; badge</li>
+      </ul>
+      <button class="btn-enroll btn-enroll-outline" onclick="openModal('Advanced','Pro Trader Mentorship','$150')" style="border-color:rgba(255,107,43,0.35);color:var(--accent2);">Enroll Now</button>
+    </div>
+ 
+  </div>
+ 
+  <!-- GUARANTEE -->
+  <div class="guarantee">
+    <span class="guarantee-icon">🛡️</span>
+    <p><strong>7-Day Money-Back Guarantee.</strong> If you attend the first week of classes and feel the program isn't right for you, we'll refund your payment in full — no questions asked.</p>
+  </div>
+ 
+  <!-- COMPARISON TABLE -->
+  <div class="compare-section">
+    <h2 class="compare-title">What's included in each plan?</h2>
+    <table class="compare-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Beginner</th>
+          <th class="highlight">Intermediate</th>
+          <th>Advanced</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Video lessons</td>
+          <td>40+</td>
+          <td>80+</td>
+          <td>80+ + extras</td>
+        </tr>
+        <tr>
+          <td>Live trading sessions</td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="tick">✓</span> Weekly</td>
+          <td><span class="tick">✓</span> Weekly</td>
+        </tr>
+        <tr>
+          <td>1-on-1 mentor calls</td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="tick">✓</span> Weekly</td>
+        </tr>
+        <tr>
+          <td>Trade journal framework</td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="tick">✓</span></td>
+          <td><span class="tick">✓</span></td>
+        </tr>
+        <tr>
+          <td>Risk management module</td>
+          <td><span class="partial">Basic</span></td>
+          <td><span class="tick">✓</span></td>
+          <td><span class="tick">✓</span></td>
+        </tr>
+        <tr>
+          <td>Community access</td>
+          <td><span class="tick">✓</span></td>
+          <td><span class="tick">✓</span> Priority</td>
+          <td><span class="tick">✓</span> Lifetime</td>
+        </tr>
+        <tr>
+          <td>Certificate</td>
+          <td><span class="tick">✓</span></td>
+          <td><span class="tick">✓</span></td>
+          <td><span class="tick">✓</span> Pro badge</td>
+        </tr>
+        <tr>
+          <td>Personal trade reviews</td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="cross">✗</span></td>
+          <td><span class="tick">✓</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+ 
+</div><!-- end .page -->
+ 
+<!-- ENROLLMENT MODAL -->
+<div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
+  <div class="modal" id="modal">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-plan-badge badge-gold" id="modalBadge">Intermediate</div>
+    <h2 id="modalTitle">Crypto &amp; Forex Mastery</h2>
+    <div class="modal-price" id="modalPrice">$100</div>
+    <div class="modal-form">
+      <div>
+        <label>Full Name</label>
+        <input type="text" id="mName" placeholder="Your full name" />
+      </div>
+      <div>
+        <label>Email Address</label>
+        <input type="email" id="mEmail" placeholder="you@email.com" />
+      </div>
+      <div>
+        <label>WhatsApp Number</label>
+        <input type="tel" id="mPhone" placeholder="+234 ..." />
+      </div>
+      <div>
+        <label>How did you hear about us?</label>
+        <select id="mSource">
+          <option value="">Select...</option>
+          <option>Instagram</option>
+          <option>Twitter / X</option>
+          <option>WhatsApp</option>
+          <option>Friend or referral</option>
+          <option>YouTube</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <button class="modal-submit" onclick="submitEnrollment()">Confirm Enrollment →</button>
+    </div>
+  </div>
+</div>
+ 
+<script src="script.js"></script>
+</body>
+</html>

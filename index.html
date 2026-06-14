@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Time Crypto — Learn to Trade the Financial Markets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ 
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-icon">TC</div>
+    Time Crypto
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#courses">Courses</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="enroll.html" class="nav-cta">Enroll Now</a></li>
+  </ul>
+  <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+ 
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about"         onclick="closeMenu()">About</a>
+  <a href="#courses"       onclick="closeMenu()">Courses</a>
+  <a href="#testimonials"  onclick="closeMenu()">Testimonials</a>
+  <a href="#contact"       onclick="closeMenu()">Contact</a>
+  <a href="enroll.html"    onclick="closeMenu()" style="color:var(--accent);font-weight:600;">Enroll Now</a>
+</div>
+ 
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-tag">
+        <span class="tag-dot"></span>
+        Live Trading Education
+      </div>
+      <h1>Master the <span>Financial Markets</span> at Your Own Pace</h1>
+      <p>Time Crypto equips students with real-world trading skills — from crypto and forex to stocks. Learn from expert traders, not theory.</p>
+      <div class="hero-actions">
+        <a href="enroll.html" class="btn-primary">Enroll Now</a>
+        <a href="#about"      class="btn-outline">Learn More</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <div class="stat-num">2,400+</div>
+          <div class="stat-label">Students Enrolled</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">18</div>
+          <div class="stat-label">Expert Instructors</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num">94%</div>
+          <div class="stat-label">Success Rate</div>
+        </div>
+      </div>
+    </div>
+ 
+    <div class="hero-visual">
+      <div class="card-dark">
+        <div style="font-size:0.78rem;color:var(--muted);margin-bottom:14px;font-weight:500;">Live Market Watch</div>
+        <div class="ticker-row">
+          <div>
+            <div class="ticker-name">BTC/USD</div>
+            <div class="ticker-sub">Bitcoin</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div class="ticker-price">$67,412</div>
+            <span class="badge-up">+2.4%</span>
+          </div>
+        </div>
+        <div class="ticker-row">
+          <div>
+            <div class="ticker-name">ETH/USD</div>
+            <div class="ticker-sub">Ethereum</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div class="ticker-price">$3,581</div>
+            <span class="badge-up">+1.8%</span>
+          </div>
+        </div>
+        <div class="ticker-row">
+          <div>
+            <div class="ticker-name">EUR/USD</div>
+            <div class="ticker-sub">Forex</div>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <div class="ticker-price">1.0842</div>
+            <span class="badge-down">-0.3%</span>
+          </div>
+        </div>
+        <div class="chart-bar-row">
+          <div class="bar" style="height:30%"></div>
+          <div class="bar" style="height:55%"></div>
+          <div class="bar" style="height:40%"></div>
+          <div class="bar" style="height:70%"></div>
+          <div class="bar" style="height:50%"></div>
+          <div class="bar" style="height:80%"></div>
+          <div class="bar active" style="height:90%"></div>
+          <div class="bar" style="height:65%"></div>
+          <div class="bar" style="height:75%"></div>
+          <div class="bar active" style="height:100%"></div>
+        </div>
+      </div>
+      <div class="card-dark" style="display:flex;align-items:center;gap:16px;">
+        <div class="enroll-mini">
+          <div class="avatars">
+            <div class="av">AO</div>
+            <div class="av">BK</div>
+            <div class="av">CJ</div>
+            <div class="av" style="background:var(--accent);color:#000;">+</div>
+          </div>
+        </div>
+        <div>
+          <div style="font-weight:600;font-size:0.92rem;">Join 2,400+ students</div>
+          <div style="font-size:0.8rem;color:var(--muted);">New cohort starting soon — limited spots</div>
+        </div>
+        <a href="enroll.html" class="btn-primary" style="padding:10px 18px;font-size:0.82rem;margin-left:auto;white-space:nowrap;">Enroll Now</a>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-inner">
+    <div class="about-grid">
+      <div>
+        <div class="section-tag">Who We Are</div>
+        <h2 class="section-title">Trading Education,<br>Built Differently</h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted);font-size:1rem;line-height:1.75;">Time Crypto was founded by active traders who got tired of seeing students pay for courses that teach theory but nothing practical. Our mission is simple: give every student the real edge that professional traders use every day — risk management, market structure, and live execution.</p>
+        <div class="about-features">
+          <div class="feat">
+            <div class="feat-icon">📈</div>
+            <div class="feat-body">
+              <h4>Live Market Sessions</h4>
+              <p>Trade alongside instructors in real-time market conditions every week.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon">🛡️</div>
+            <div class="feat-body">
+              <h4>Risk-First Curriculum</h4>
+              <p>We teach you to protect capital before chasing profits — the professional way.</p>
+            </div>
+          </div>
+          <div class="feat">
+            <div class="feat-icon">🤝</div>
+            <div class="feat-body">
+              <h4>Private Trader Community</h4>
+              <p>Access a community of active traders, mentors, and peer accountability groups.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-right">
+        <h3>What You'll Master</h3>
+        <div class="progress-item">
+          <div class="progress-header"><span>Technical Analysis</span><span class="progress-pct">95%</span></div>
+          <div class="progress-track"><div class="progress-fill" style="width:95%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header"><span>Risk Management</span><span class="progress-pct">90%</span></div>
+          <div class="progress-track"><div class="progress-fill" style="width:90%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header"><span>Crypto Trading</span><span class="progress-pct">88%</span></div>
+          <div class="progress-track"><div class="progress-fill" style="width:88%"></div></div>
+        </div>
+        <div class="progress-item">
+          <div class="progress-header"><span>Forex &amp; Pairs Trading</span><span class="progress-pct">82%</span></div>
+          <div class="progress-track"><div class="progress-fill" style="width:82%"></div></div>
+        </div>
+        <div class="progress-item" style="margin-bottom:0;">
+          <div class="progress-header"><span>Trading Psychology</span><span class="progress-pct">78%</span></div>
+          <div class="progress-track"><div class="progress-fill" style="width:78%"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- COURSES -->
+<section id="courses">
+  <div class="section-inner">
+    <div class="courses-header">
+      <div>
+        <div class="section-tag">Our Programs</div>
+        <h2 class="section-title">Pick Your Path</h2>
+        <div class="divider"></div>
+        <p class="section-sub">Every course is built around live practice — not slides and theory.</p>
+      </div>
+    </div>
+    <div class="courses-grid">
+      <div class="course-card" onclick="window.location.href='enroll.html'">
+        <span class="course-level level-beginner">Beginner</span>
+        <h3>Trading Foundations</h3>
+        <p>Learn the basics of financial markets, chart reading, and how exchanges work. Perfect if you're starting from zero.</p>
+        <div class="course-meta">
+          <span>⏱ 6 Weeks</span>
+          <span>📹 40+ Videos</span>
+          <span>🎓 Certificate</span>
+        </div>
+      </div>
+      <div class="course-card featured" onclick="window.location.href='enroll.html'">
+        <span class="course-level level-intermediate">Intermediate</span>
+        <h3>Crypto &amp; Forex Mastery</h3>
+        <p>Deep dive into crypto markets and forex pairs with live sessions, setups, and a real trade journal framework.</p>
+        <div class="course-meta">
+          <span>⏱ 10 Weeks</span>
+          <span>📹 80+ Videos</span>
+          <span>🎓 Certificate</span>
+        </div>
+      </div>
+      <div class="course-card" onclick="window.location.href='enroll.html'">
+        <span class="course-level level-advanced">Advanced</span>
+        <h3>Pro Trader Mentorship</h3>
+        <p>One-on-one mentorship with a professional trader. Review your trades, sharpen your edge, and trade with confidence.</p>
+        <div class="course-meta">
+          <span>⏱ 12 Weeks</span>
+          <span>👤 1-on-1 Sessions</span>
+          <span>🎓 Certificate</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-inner">
+    <div class="section-tag">Student Stories</div>
+    <h2 class="section-title">Results Speak for Themselves</h2>
+    <div class="divider"></div>
+    <div class="testimonials-grid">
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"Before Time Crypto I had no idea where to start. After 8 weeks I made my first profitable trade and finally understood what I was looking at on a chart."</p>
+        <div class="tcard-author">
+          <div class="t-av">AO</div>
+          <div>
+            <div class="t-name">Adaeze Okonkwo</div>
+            <div class="t-role">Beginner Course Graduate, Lagos</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"The live sessions are worth every naira. Being able to watch a real trade play out in real time and ask questions changed how I think about risk completely."</p>
+        <div class="tcard-author">
+          <div class="t-av">BK</div>
+          <div>
+            <div class="t-name">Babatunde Kehinde</div>
+            <div class="t-role">Crypto &amp; Forex Mastery, Abuja</div>
+          </div>
+        </div>
+      </div>
+      <div class="tcard">
+        <div class="stars">★★★★★</div>
+        <p>"The mentorship program was a turning point. My instructor reviewed every trade I made for 3 months and helped me cut my losses in half while growing my wins."</p>
+        <div class="tcard-author">
+          <div class="t-av">CI</div>
+          <div>
+            <div class="t-name">Chisom Ike</div>
+            <div class="t-role">Pro Trader Mentorship, Port Harcourt</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-inner">
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="section-tag">Get in Touch</div>
+        <h2 class="section-title">Ready to Start Trading?</h2>
+        <div class="divider"></div>
+        <p style="color:var(--muted);font-size:1rem;">Fill in the form and our team will reach out within 24 hours with your enrollment details and next steps.</p>
+        <div class="contact-details">
+          <div class="cd">
+            <div class="cd-icon">📧</div>
+            <div class="cd-text"><h4>Email Us</h4><p>hello@timecrypto.io</p></div>
+          </div>
+          <div class="cd">
+            <div class="cd-icon">💬</div>
+            <div class="cd-text"><h4>WhatsApp</h4><p>+234 800 TIME CRYPTO</p></div>
+          </div>
+          <div class="cd">
+            <div class="cd-icon">📍</div>
+            <div class="cd-text"><h4>Location</h4><p>Lagos, Nigeria — Classes are online &amp; in-person</p></div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 style="margin-bottom:24px;font-size:1.2rem;">Send Us a Message</h3>
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Your full name" />
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" placeholder="you@email.com" />
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone / WhatsApp</label>
+          <input type="tel" id="phone" placeholder="+234 ..." />
+        </div>
+        <div class="form-group">
+          <label for="course">Course Interest</label>
+          <select id="course">
+            <option value="">Select a program...</option>
+            <option>Trading Foundations (Beginner) — $49</option>
+            <option>Crypto &amp; Forex Mastery (Intermediate) — $100</option>
+            <option>Pro Trader Mentorship (Advanced) — $150</option>
+            <option>Not sure — I'd like guidance</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Anything else?</label>
+          <textarea id="message" placeholder="Tell us your experience level or any questions..."></textarea>
+        </div>
+        <button class="btn-primary" style="width:100%;" onclick="handleSubmit()">Go to Enrollment →</button>
+      </div>
+    </div>
+  </div>
+</section>
+ 
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">
+          <div class="logo-icon">TC</div>
+          Time Crypto
+        </div>
+        <p>Empowering African students to trade the global financial markets with skill, discipline, and confidence.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="enroll.html">Trading Foundations</a></li>
+          <li><a href="enroll.html">Crypto &amp; Forex Mastery</a></li>
+          <li><a href="enroll.html">Pro Trader Mentorship</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#testimonials">Success Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <ul>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">Twitter / X</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">Telegram</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Time Crypto. All rights reserved.</span>
+      <span>Trading involves risk. Past performance is not indicative of future results.</span>
+    </div>
+  </div>
+</footer>
+ 
+<script src="script.js"></script>
+</body>
+</html>
+ 
